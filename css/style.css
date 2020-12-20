@@ -1,0 +1,153 @@
+html, body {
+  background-color: rgba(251,243,234,0.4);
+  padding: 0px;
+  margin: 0px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#navigationbar {
+  text-align: right;
+  font-size: 19px;
+  font-family: "Rubik", sans-serif;
+  padding: 2px;
+  padding-right: 5px;
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  z-index : 1;
+}
+
+#navigation p {
+  margin: none;
+  text-align: right;
+}
+
+#navButton {
+  background-color: rgba(0,0,0,0);
+  border-style: none;
+  cursor: pointer;
+}
+
+#navMenu {
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 8px;
+  border-style: none;
+  font-family: "Avenir", sans-serif;
+  color: rgba(255,255,255,1);
+  padding-right: 15px;
+  padding-left: 15px;
+  line-height: 30px;
+}
+
+#navMenu a {
+  color: rgba(255,255,255,1);
+  padding: 0px;
+  font-size: 18px;
+}
+#navMenu a:hover {
+  background-color: rgba(0,0,0,0);
+  font-weight: bold;
+}
+
+#header {
+  padding-top: 50px;
+  padding-right: 25px;
+}
+
+.headerDiv {
+  height: 250px;
+  width: 100%;
+  background-image: url("../assets/christmas-background.jpg");
+  background-size: 100%;
+  background-position: center;
+  max-width: 100%;
+}
+.contentContainer {
+  margin-right: 90px;
+  margin-left: 90px;
+  font-family: "Avenir", sans-serif;
+  padding: 30px;
+  padding-left: 90px;
+  padding-right: 90px;
+  color: rgba(0,0,0,0.7);
+  text-align: center;
+}
+.song {
+  padding-top: 10px;
+}
+#song-title-style {
+  font-size: 22px;
+  font-weight: bold;
+}
+#lyrics-style {
+  font-size: 18px;
+}
+#chorus-style {
+  font-size: 18px;
+  color: rgba(255,0,0,0.6);
+}
+#headerText {
+  font-family: "Avenir", sans-serif;
+  color: rgba(250,250,250,0.8);
+  text-align: right;
+  padding-top: 30px;
+}
+#headerText h5 {
+  font-size: 28px;
+  font-weight: bold;
+}
+#headerText p {
+  font-size: 19px;
+  opacity: 80%;
+}
+
+.footerContainer {
+  height: 20px;
+  font-family: "Avenir", sans-serif;
+  border-top-style: solid;
+  border-color: rgba(0,0,0,0.1);
+  border-width: 1px;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 11px;
+  color: rgba(0,0,0,0.6);
+}
+
+
+@media only screen and (max-width: 900px) {
+  .contentContainer {
+    margin: 0px;
+    padding-left: 60px;
+    padding-right: 0px;
+    text-align: left;
+  }
+  #header {
+    padding-top: 5px;
+  }
+}
+@media only screen and (max-width:600px) {
+  .contentContainer {
+    padding-left: 25px;
+    padding-right: 0px;
+  }
+  .headerDiv {
+    background-size: 130%;
+  }
+  #navigation {
+    font-size: 16px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0,0,0,0.35);
+    font-weight: bold;
+  }
+  #headerText {
+    padding-top: 80px;
+    padding-left: 33px;
+    text-align: left;
+  }
+  #headerText h5 {
+    font-weight: bold;
+  }
+}
