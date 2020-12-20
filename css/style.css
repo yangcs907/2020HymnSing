@@ -46,7 +46,7 @@ body {
 }
 #navMenu a:hover {
   background-color: rgba(0,0,0,0);
-  color: white;
+  font-weight: bold;
 }
 
 #header {
